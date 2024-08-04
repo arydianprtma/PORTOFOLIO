@@ -1,0 +1,477 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f6f6f6;
+  color: hsl(0, 0%, 20%);
+  margin: 15px;
+  padding: 0;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Menggunakan Efek Bouncing pada Hover */
+/* Header Styling */
+.container {
+  background-color: #1500ff;
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column; /* Mengatur arah elemen menjadi kolom */
+  align-items: center; /* Memusatkan elemen secara horizontal */
+  text-align: center; /* Memusatkan teks */
+  transition: background-color 0.3s ease;
+}
+
+.container h1 {
+  color: #ffffff; /* Warna putih untuk keseluruhan teks */
+  font-size: 24px;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.container h1 span {
+  color: #ff9900; /* Warna oranye untuk span */
+}
+
+.container p span{
+  color: #ff9900;
+  font-family: "Poppins", sans-serif;
+}
+
+.container p {
+  color: #ffffff; /* Warna putih untuk teks */
+  font-size: 16px; /* Ukuran font untuk teks universitas */
+  margin: 5px 0; /* Jarak atas dan bawah untuk teks */
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-links {
+  margin-top: 10px; /* Jarak atas untuk navigasi */
+}
+
+.nav-links a {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 7px 15px;
+  margin-left: 15px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease; /* Tambahkan background-color jika diperlukan */
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-links a:hover {
+  color: #ff9900;
+  transform: translateY(-5px);
+  background-color: transparent; /* Menjaga agar background tidak berubah */
+}
+
+.nav-links a:focus,
+.nav-links a:hover {
+  outline: none;
+}
+
+.nav-links a:active {
+  transform: translateY(0);
+}
+
+.separator {
+  border: 0;
+  border-top: 3px solid #ccc;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.home-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.intro,
+.about,
+.skills,
+.projects,
+.contact {
+  margin-bottom: 40px;
+}
+
+h2 {
+  text-align: center;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+  color: #1500ff;
+}
+
+.intro h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 18px;
+  color: #333333;
+}
+
+/* Skills CSS */
+.skills {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.skills h3 {
+  color: #0000ff;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4 px 6px rgba(0, 4, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card i {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+/* Warna spesifik untuk setiap ikon */
+.skill-card .fa-html5 {
+  color: #e34f26;
+}
+.skill-card .fa-css3-alt {
+  color: #1572b6;
+}
+.skill-card .fa-js {
+  color: #f7df1e;
+}
+.skill-card .fa-node-js {
+  color: #339933;
+}
+
+.skill-card h4 {
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.skill-bar {
+  background-color: #e0e0e0;
+  height: 6px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.skill-level {
+  height: 100%;
+  background-color: #1500ff;
+  transition: width 1s ease-in-out;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.project-image {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.hidden-projects {
+  display: none; /* Menyembunyikan proyek tambahan */
+}
+
+.see-more-btn:hover {
+  background-color: #0f00b3;
+}
+
+.see-more-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #1500ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.see-more-btn:hover {
+  background-color: #0f00b3; /* Mengubah warna tombol saat hover */
+}
+
+.testimonials {
+  padding: 40px 0;
+}
+
+.testimonial-container {
+  overflow-x: auto;
+  padding: 20px 0;
+}
+
+.testimonial-scroll {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+.testimonial-card {
+  flex: 0 0 300px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.testimonial-card p {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.testimonial-card h4 {
+  text-align: right;
+  color: #1500ff;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact-form button {
+  background-color: #1500ff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: #0f00b3;
+}
+
+.contact-email {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.contact-email h3 {
+  color: #1500ff;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.email-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.email-link {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+
+.email-link:hover {
+  background-color: #25d366;
+}
+
+.email-link i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.footer {
+  border-radius: 20px;
+  background-color: #1500ff;
+  color: #ffffff;
+  padding: 40px 20px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+  min-width: 200px;
+}
+
+.footer-section h4 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.social-link:hover {
+  color: #ff9900;
+  transform: scale(1.1);
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+  display: inline-block;
+  padding: 2px 0;
+}
+
+.footer-nav a span {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.footer-nav a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff9900;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #ff9900;
+}
+
+.footer-nav a:hover span {
+  transform: translateY(-3px);
+}
+
+.footer-nav a:hover::before {
+  transform: scaleX(1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 5px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .nav-links {
+      margin-top: 15px;
+  }
+
+  .nav-links a {
+      margin: 5px;
+  }
+
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-section {
+      text-align: center;
+      margin-bottom: 30px;
+  }
+
+  .social-links {
+      align-items: center;
+  }
+
+  .footer-nav {
+      align-items: center;
+  }
+}

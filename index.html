@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARY DIAN PRATAMA - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.3/simple-lightbox.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.3/simple-lightbox.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+  </head>
+  <body>
+    <header class="container">
+      <h1>ARY <span>DIAN</span> PRATAMA</h1>
+      <p><span>Front-end Developer</span> | Universitas Amikom Purwokerto</p>
+      <nav class="nav-links">
+        <a href="#About">About</a>
+        <a href="#Project">Project</a>
+        <a href="#Contact">Contact</a>
+      </nav>
+    </header>
+
+    <hr class="separator" />
+
+    <main class="home-content">
+      <section class="intro" data-aos="fade-up">
+        <h2>Welcome To My Portfolio</h2>
+        <p>
+          I'm a website front-end developer with skills that are constantly
+          being honed. My passion lies in creating visually appealing and highly
+          functional user interfaces that provide an exceptional user
+          experience.
+        </p>
+      </section>
+
+      <section class="about" id="About" data-aos="fade-up">
+        <h3>About Me</h3>
+        <p>
+          I specialize in creating responsive and user-friendly websites. With a
+          solid foundation in HTML, CSS, and JavaScript, I strive to build
+          engaging digital experiences.
+        </p>
+      </section>
+
+      <hr class="separator" />
+
+      <section class="skills" data-aos="fade-up">
+        <h3>My Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="fab fa-html5"></i>
+            <h4>HTML5</h4>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 25%"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-css3-alt"></i>
+            <h4>CSS3</h4>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 25%"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-js"></i>
+            <h4>JavaScript</h4>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 8%"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-node-js"></i>
+            <h4>Node.js</h4>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 5%"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="separator" />
+
+      <section class="projects" id="Project" data-aos="fade-up">
+        <h3>Projects</h3>
+        <div class="project-grid">
+          <div class="project-card">
+            <a href="src/img/Project-1.png" class="project-link">
+              <img
+                src="src/img/Project-1.png"
+                alt="Project 1"
+                class="project-image"
+              />
+            </a>
+            <h4>Project 1</h4>
+            <p>Personal Portfolio website</p>
+          </div>
+          <div class="project-card">
+            <a href="src/img/Coming_Soon.png" class="project-link">
+              <img
+                src="src/img/Coming_Soon.png"
+                alt="Project 2"
+                class="project-image"
+              />
+            </a>
+            <h4>Project 2</h4>
+            <p>COMING SOON</p>
+          </div>
+          <!-- Add more projects as needed -->
+        </div>
+        <button class="see-more-btn" id="see-more-btn">See More</button>
+      </section>
+
+      <hr class="separator" />
+
+      <section class="testimonials" data-aos="fade-up">
+        <h3>Testimonials</h3>
+        <div class="testimonial-container">
+          <div class="testimonial-scroll">
+            <div class="testimonial-card">
+              <p>"Ary is an excellent developer. His work is top-notch!"</p>
+              <h4>John Doe</h4>
+            </div>
+            <div class="testimonial-card">
+              <p>
+                "Working with Ary was a great experience. Highly recommended!"
+              </p>
+              <h4>Jane Smith</h4>
+            </div>
+            <!-- Add more testimonials as needed -->
+          </div>
+        </div>
+      </section>
+
+      <hr class="separator" />
+
+      <section class="contact-form" id="Contact" data-aos="fade-up">
+        <h3>Contact Me</h3>
+        <form id="contact-form">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your Email"
+            required
+          />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+
+      <section class="contact-email" data-aos="fade-up">
+        <h3>Contact via Email</h3>
+        <a href="mailto:arydianprtma@gmail.com" class="email-link">
+          <i class="fas fa-envelope"></i> Email Me
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>Email: arydianprtma@gmail.com</p>
+          <p>Phone: +62 0822-1400-3125</p>
+        </div>
+        <div class="footer-section">
+          <h4>Follow Me</h4>
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/ary-dian-pratama-306878310/"
+              class="social-link"
+            >
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/arydianprtma" class="social-link">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a
+              href="https://www.instagram.com/arydiannnprt/"
+              class="social-link"
+            >
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <nav class="footer-nav">
+            <a href="#About"><span>About</span></a>
+            <a href="#Project"><span>Projects</span></a>
+            <a href="#Contact"><span>Contact</span></a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Ary Dian Pratama. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
